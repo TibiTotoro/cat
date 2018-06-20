@@ -1,0 +1,15 @@
+.cards-wrap {
+	display:flex;
+	flex-wrap:wrap;
+	justify-content: center;
+	margin: 0 (-$item_margin);
+	@media screen and (min-width: $screen_lg){
+		justify-content:space-between;
+	}
+}
+.cards-wrap__item {
+	flex: 0 1 $item_width;
+	margin:0 $item_margin 25px;
+	display:flex;
+	flex-direction:column;
+}

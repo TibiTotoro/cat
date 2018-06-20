@@ -1,0 +1,130 @@
+
+<!DOCTYPE html>
+<html class="" lang="ru">
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+	<title>Коты</title>
+	<meta name="Description" content="">
+	<meta name=viewport content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="css/style.css" type="text/css" media="screen">
+</head> 
+<body>
+	<div class="section__wrapper">
+		<section class="section">
+			<div class="container">
+				<h1>Ты сегодня покормил кота?</h1>
+				<div class="cards-wrap">
+					<div class="cards-wrap__item card">
+						<div class="card__info">
+							<svg class="card__border" version="1.1" x="0px" y="0px" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"   xml:space="preserve" viewBox="0 0 320 499" preserveAspectRatio="none" style="width:100%; height:100%;">
+								<g class="card__border-g" >
+									<polyline points="2 485,2 40 ,40 2,306 2" />
+									<circle r="12" cx="306" cy="14" stroke-dasharray="20 60" transform="rotate(-90, 306, 14)"/>
+									<line x1="318" y1="14" x2="318" y2="485" />
+									<circle r="12" cx="306" cy="485" stroke-dasharray="20 60" />
+									<line x1="306" y1="497" x2="12" y2="497" />
+									<circle r="12" cx="14" cy="485" stroke-dasharray="20 60" transform="rotate(90, 14, 485)"/>
+								</g>
+							</svg>
+							<p class="card__above-title">Сказочное заморское яство</p>
+							<p class="card__title">Нямушка </p>
+							<p class="card__subtitle">с фуа-гра</p>
+							<p class="card__desc"><b>10</b> порций</p>
+							<p class="card__desc">мышь в подарок</p>
+							<img class="card__img" src="img/cat.png" alt=""/>
+							<span class="card__weight"><span class="card__weight-num">0,5</span><span class="card__weight-txt">кг</span></span>
+						</div>	
+						<p class="card__text">Чего сидишь? Порадуй котэ, <span class="card__text-link">купи.</span></p>	
+					</div>	
+					<div class="cards-wrap__item card">
+						<div class="card__info">
+							<svg class="card__border" version="1.1" x="0px" y="0px" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"   xml:space="preserve" viewBox="0 0 320 499" preserveAspectRatio="none" style="width:100%; height:100%;">
+								<g class="card__border-g">
+									<polyline points="2 485,2 40 ,40 2,306 2" />
+									<circle r="12" cx="306" cy="14" stroke-dasharray="20 60" transform="rotate(-90, 306, 14)"/>
+									<line x1="318" y1="14" x2="318" y2="485" />
+									<circle r="12" cx="306" cy="485" stroke-dasharray="20 60" />
+									<line x1="306" y1="497" x2="12" y2="497" />
+									<circle r="12" cx="14" cy="485" stroke-dasharray="20 60" transform="rotate(90, 14, 485)"/>
+								</g>
+							</svg>
+							<p class="card__above-title">Сказочное заморское яство</p>
+							<p class="card__title">Нямушка </p>
+							<p class="card__subtitle">с рыбой</p>
+							<p class="card__desc"><b>40</b> порций</p>
+							<p class="card__desc"><b>2</b> мыши в подарок</p>
+							<img class="card__img" src="img/cat.png" alt=""/>
+							<span class="card__weight"><span class="card__weight-num">2</span><span class="card__weight-txt">кг</span></span>
+						</div>	
+						<p class="card__text">Головы щучьи с чесноком да свежайшая сёмгушка.</p>	
+					</div>	
+					<div class="cards-wrap__item card card_disabled">
+						<div class="card__info">
+							<svg class="card__border" version="1.1" x="0px" y="0px" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"   xml:space="preserve" viewBox="0 0 320 499" preserveAspectRatio="none" style="width:100%; height:100%;">
+								<g class="card__border-g" >
+									<polyline points="2 485,2 40 ,40 2,306 2" />
+									<circle r="12" cx="306" cy="14" stroke-dasharray="20 60" transform="rotate(-90, 306, 14)"/>
+									<line x1="318" y1="14" x2="318" y2="485" />
+									<circle r="12" cx="306" cy="485" stroke-dasharray="20 60" />
+									<line x1="306" y1="497" x2="12" y2="497" />
+									<circle r="12" cx="14" cy="485" stroke-dasharray="20 60" transform="rotate(90, 14, 485)"/>
+								</g>
+							</svg>
+							<p class="card__above-title">Сказочное заморское яство</p>
+							<p class="card__title">Нямушка </p>
+							<p class="card__subtitle">с курой</p>
+							<p class="card__desc"><b>100</b> порций</p>
+							<p class="card__desc"><b>5</b> мышей в подарок</p>
+							<p class="card__desc">заказчик доволен</p>
+							<img class="card__img" src="img/cat.png" alt=""/>
+							<span class="card__weight"><span class="card__weight-num">5</span><span class="card__weight-txt">кг</span></span>
+						</div>	
+						<p class="card__text">Печалька, с курой закончился. </p>	
+					</div>	
+				</div>
+			</div>
+		</section>
+	</div>
+	<script>
+		window.onload = function(e) {
+			"use strict";
+			var cards = document.querySelectorAll('.card__info');
+			var flag = 0;
+			if ('ontouchstart' in window) {
+				for (var i = 0; i < cards.length; i++) {
+					if (!cards[i].parentNode.classList.contains('card_disabled')){							
+						cards[i].addEventListener('click', function() {
+							this.parentNode.classList.toggle('card_selected');  
+						});	
+					}		
+				}
+			}
+			else {
+				for (var i = 0; i < cards.length; i++) {
+					if (!cards[i].parentNode.classList.contains('card_disabled')){							
+						cards[i].addEventListener('click', function() {
+							if (this.parentNode.classList.contains('card_selected')) {
+								this.parentNode.classList.remove('card_selected'); 
+							}
+							else {
+								flag = 1;
+							}	
+						});
+						cards[i].addEventListener('mouseout', function() {
+							flag && this.parentNode.classList.add('card_selected'); 
+							flag = 0;
+						});
+					}		
+				}
+			}
+			var selectHtml = document.querySelectorAll('.card__text-link');
+			for (var i = 0; i < selectHtml.length; i++) {
+				selectHtml[i].addEventListener('click', function() {
+					this.parentNode.parentNode.classList.add('card_selected'); 
+				});
+			}
+			
+		}
+	</script>	
+</body>
+</html>

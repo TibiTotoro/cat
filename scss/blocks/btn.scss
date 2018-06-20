@@ -1,0 +1,15 @@
+.btn {
+	display:inline-block;
+	width:100%;
+	max-width:250px;
+	padding:16px 5px;
+	text-align:center;
+	text-transform:uppercase;
+	text-decoration:none;
+	background:$btn_bg;
+	color:$btn_color;
+	font-family:$title_font;
+	border-radius:3px;
+	font-size:0.8125em;
+	letter-spacing: 1.5px;
+} 
